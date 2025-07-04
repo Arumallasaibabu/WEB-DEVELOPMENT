@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    padding: 20px;
+}
+
+.display {
+    background-color: #444;
+    color: #fff;
+    font-size: 2.5em;
+    padding: 20px;
+    text-align: right;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.button:hover {
+    background-color: #666;
+}
+
+.button.operator {
+    background-color: #f39c12; /* Orange for operators */
+}
+
+.button.operator:hover {
+    background-color: #e67e22;
+}
+
+.button.clear {
+    background-color: #e74c3c; /* Red for clear */
+}
+
+.button.clear:hover {
+    background-color: #c0392b;
+}
+
+.button.equals {
+    background-color: #27ae60; /* Green for equals */
+    grid-column: span 1; /* Occupy 1 column, but aligns well due to overall grid */
+    grid-row: span 2; /* Spanning two rows for the equals button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button.equals:hover {
+    background-color: #229954;
+}
+
+.button.zero {
+    grid-column: span 2; /* Make the zero button span two columns */
+}
