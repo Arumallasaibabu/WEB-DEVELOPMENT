@@ -1,0 +1,132 @@
+/* Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 80px;
+  background-color: #0d1b7e;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffd700;
+}
+
+.btn {
+  background-color: white;
+  color: #0d1b7e;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffd700;
+  color: rgb(0, 0, 0);
+}
+
+/* Sections */
+.section {
+  padding: 100px 80px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.alt-bg {
+  background: linear-gradient(to right, #eef2f3, #e0f7fa);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 50, 0.6), rgba(0, 0, 50, 0.6)),
+              url('https://images.unsplash.com/photo-1584697964321-b3c92c131fc5?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+  color: white;
+  position: relative;
+  padding: 160px 40px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Cards */
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  width: 280px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  color: #0d1b7e;
+  margin-bottom: 10px;
+}
+
+.card h4 {
+  margin-top: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
